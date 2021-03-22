@@ -1,0 +1,30 @@
+def greet(name=" <name>" , greeting= "hello"):
+    print(f'{greeting}, {name}!')
+
+greet("jurgen")
+
+
+def force(mass =1.0 , body = "earth"):
+    planet={
+    "sun": 274,
+    "jupiter": 24.3,
+    "neptune": 11.0,
+    "saturn": 10.4,
+    "earth" : 9.8,
+    "uranus": 8.9,
+    "venus": 8.9,
+    "mars": 3.7,
+    "mecury": 3.7,
+    "Moon": 1.6,
+    "pluto": 0.6}
+    gravity = planet[body]
+    force1 = mass * gravity
+    print(force1)
+    
+force( 20 , "earth")
+
+def pull(m1,m2,d):
+    pull1 = 6.674*10**-11*((m1*m2)/d**2)
+    print(pull1)
+
+pull(800, 1500, 3)
