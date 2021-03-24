@@ -1,9 +1,19 @@
-def greet(name=" <name>" , greeting= "hello"):
-    print(f'{greeting}, {name}!')
+# Do not modify these lines
+__winc_id__ = '7b9401ad7f544be2a23321292dd61cb6'
+__human_name__ = 'arguments'
 
-greet("jurgen")
+# Add your code after this line
 
 
+#opdracht 1 
+def greet(name , greeting= 'Hello, <name>!'):
+    greeting_2 = greeting.replace('<name>', name)
+    return(greeting_2)
+
+p_greet = greet("jurgen")
+print(p_greet)
+
+#opdracht 2
 def force(mass =1.0 , body = "earth"):
     planet={
     "sun": 274,
@@ -19,12 +29,15 @@ def force(mass =1.0 , body = "earth"):
     "pluto": 0.6}
     gravity = planet[body]
     force1 = mass * gravity
-    print(force1)
-    
-force( 20 , "earth")
+    return force1
 
+p_force = force( 20 , "earth")
+print(p_force)
+
+#opdracht 3
 def pull(m1,m2,d):
     pull1 = 6.674*10**-11*((m1*m2)/d**2)
-    print(pull1)
+    return(pull1)
 
-pull(800, 1500, 3)
+p_pull = pull(800, 1500, 3)
+print(p_pull)
